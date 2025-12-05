@@ -2,87 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Canadian Payday Loan Design System - All colors in HSL */
 
 @layer base {
   :root {
+    /* Navy Blue - Primary brand color */
+    --primary: 201 78% 20%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Red Accent - Canadian inspired */
+    --accent: 0 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Backgrounds */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 210 20% 15%;
+    
+    /* Light gray sections */
+    --muted: 0 0% 96%;
+    --muted-foreground: 210 10% 40%;
+    
+    /* Cards */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 210 20% 15%;
+    
+    /* Secondary - lighter navy */
+    --secondary: 201 40% 95%;
+    --secondary-foreground: 201 78% 20%;
+    
+    /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
+    --popover-foreground: 210 20% 15%;
+    
+    /* Destructive */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & inputs */
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 201 78% 20%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom tokens */
+    --navy: 201 78% 20%;
+    --navy-light: 201 60% 30%;
+    --navy-dark: 201 78% 15%;
+    --red-accent: 0 70% 50%;
+    --red-accent-hover: 0 70% 45%;
+    --gray-light: 0 0% 96%;
+    --gray-medium: 210 10% 85%;
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(201 78% 20% / 0.1);
+    --shadow-card: 0 8px 30px -10px hsl(201 78% 20% / 0.15);
+    --shadow-button: 0 4px 14px -3px hsl(0 70% 50% / 0.4);
+    
+    /* Sidebar (keeping defaults) */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 210 20% 8%;
+    --foreground: 0 0% 95%;
+    --card: 210 20% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 210 20% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 201 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 201 40% 15%;
+    --secondary-foreground: 201 60% 80%;
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 10% 60%;
+    --accent: 0 70% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 201 60% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -99,7 +108,80 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply bg-accent text-accent-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-[hsl(var(--red-accent-hover))] shadow-[var(--shadow-button)] hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-[hsl(var(--navy-light))] shadow-[var(--shadow-soft)];
+  }
+
+  .btn-ghost {
+    @apply border-2 border-primary text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .btn-hero-ghost {
+    @apply border-2 border-primary-foreground/30 text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-primary-foreground/10 backdrop-blur-sm;
+  }
+
+  /* Card styles */
+  .card-elevated {
+    @apply bg-card rounded-xl p-6 shadow-[var(--shadow-card)] border border-border/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .card-flat {
+    @apply bg-card rounded-xl p-6 border border-border;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--navy)) 0%, hsl(var(--navy-dark)) 100%);
+  }
+
+  .gradient-subtle {
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+  }
+
+  /* Trust badge */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium;
+  }
+
+  /* Star rating */
+  .star-filled {
+    @apply text-yellow-400 fill-yellow-400;
+  }
+}
+
+@layer utilities {
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(var(--navy-light))];
   }
 }

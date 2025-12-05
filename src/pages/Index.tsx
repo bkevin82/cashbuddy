@@ -1,12 +1,73 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+/**
+ * MapleCash Landing Page
+ * A premium Canadian payday loan landing page
+ * 
+ * Sections:
+ * 1. Navbar - Sticky navigation with mobile hamburger
+ * 2. Hero - Main headline with loan calculator
+ * 3. Trust - Customer reviews and trust badges
+ * 4. How It Works - 3-step process
+ * 5. Income Types - Accepted income sources
+ * 6. Why Choose Us - Value proposition
+ * 7. Eligibility - Requirements checklist
+ * 8. FAQ - Common questions accordion
+ * 9. Application Form - Loan application with validation
+ * 10. Contact - Support information
+ * 11. Footer - Links and legal disclaimers
+ */
+
+import { Navbar } from "@/components/landing/Navbar";
+import { HeroSection } from "@/components/landing/HeroSection";
+import { TrustSection } from "@/components/landing/TrustSection";
+import { HowItWorksSection } from "@/components/landing/HowItWorksSection";
+import { IncomeTypesSection } from "@/components/landing/IncomeTypesSection";
+import { WhyChooseUsSection } from "@/components/landing/WhyChooseUsSection";
+import { EligibilitySection } from "@/components/landing/EligibilitySection";
+import { FAQSection } from "@/components/landing/FAQSection";
+import { ApplicationForm } from "@/components/landing/ApplicationForm";
+import { ContactSection } from "@/components/landing/ContactSection";
+import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* SEO Meta tags would go in index.html or via react-helmet */}
+      
+      {/* Navigation */}
+      <Navbar />
+      
+      {/* Main Content */}
+      <main>
+        {/* Hero with loan calculator */}
+        <HeroSection />
+        
+        {/* Trust badges and reviews */}
+        <TrustSection />
+        
+        {/* 3-step process */}
+        <HowItWorksSection />
+        
+        {/* Accepted income types */}
+        <IncomeTypesSection />
+        
+        {/* Value proposition */}
+        <WhyChooseUsSection />
+        
+        {/* Eligibility requirements */}
+        <EligibilitySection />
+        
+        {/* FAQ accordion */}
+        <FAQSection />
+        
+        {/* Application form */}
+        <ApplicationForm />
+        
+        {/* Contact information */}
+        <ContactSection />
+      </main>
+      
+      {/* Footer with legal disclaimers */}
+      <Footer />
     </div>
   );
 };
