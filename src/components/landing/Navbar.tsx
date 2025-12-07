@@ -40,7 +40,7 @@ export const Navbar = () => {
             </div> */}
             <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center">
               <img
-                src="/logo/logo.png"
+                src="/logo.png"
                 alt="LoanBuddu logo"
                 className="w-full h-full object-contain"
               />
