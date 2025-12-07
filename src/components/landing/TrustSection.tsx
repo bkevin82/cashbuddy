@@ -51,11 +51,17 @@ const trustBadges = [
 ];
 
 const StarRating = ({ rating }: { rating: number }) => (
-  <div className="flex gap-0.5" role="img" aria-label={`${rating} out of 5 stars`}>
+  <div
+    className="flex gap-0.5"
+    role="img"
+    aria-label={`${rating} out of 5 stars`}
+  >
     {[...Array(5)].map((_, i) => (
       <Star
         key={i}
-        className={`w-4 h-4 ${i < rating ? "star-filled" : "text-muted-foreground/30"}`}
+        className={`w-4 h-4 ${
+          i < rating ? "star-filled" : "text-muted-foreground/30"
+        }`}
       />
     ))}
   </div>
@@ -71,7 +77,8 @@ export const TrustSection = () => {
             Trusted by Canadians from coast to coast
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of satisfied customers who've used MapleCash for their short-term lending needs.
+            Join thousands of satisfied customers who've used Myloanbuddy for
+            their short-term lending needs.
           </p>
         </div>
 
@@ -95,8 +102,12 @@ export const TrustSection = () => {
             >
               <div className="flex items-center justify-between mb-3">
                 <div>
-                  <p className="font-semibold text-card-foreground">{review.name}</p>
-                  <p className="text-sm text-muted-foreground">{review.province}</p>
+                  <p className="font-semibold text-card-foreground">
+                    {review.name}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {review.province}
+                  </p>
                 </div>
                 <StarRating rating={review.rating} />
               </div>

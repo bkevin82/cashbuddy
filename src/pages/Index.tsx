@@ -1,7 +1,7 @@
 /**
- * MapleCash Landing Page
+ * Myloanbuddyh Landing Page
  * A premium Canadian payday loan landing page
- * 
+ *
  * Sections:
  * 1. Navbar - Sticky navigation with mobile hamburger
  * 2. Hero - Main headline with loan calculator
@@ -32,40 +32,40 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* SEO Meta tags would go in index.html or via react-helmet */}
-      
+
       {/* Navigation */}
       <Navbar />
-      
+
       {/* Main Content */}
       <main>
         {/* Hero with loan calculator */}
         <HeroSection />
-        
+
         {/* Trust badges and reviews */}
         <TrustSection />
-        
+
         {/* 3-step process */}
         <HowItWorksSection />
-        
+
         {/* Accepted income types */}
         <IncomeTypesSection />
-        
+
         {/* Value proposition */}
         <WhyChooseUsSection />
-        
+
         {/* Eligibility requirements */}
         <EligibilitySection />
-        
+
         {/* FAQ accordion */}
         <FAQSection />
-        
+
         {/* Application form */}
         <ApplicationForm />
-        
+
         {/* Contact information */}
         <ContactSection />
       </main>
-      
+
       {/* Footer with legal disclaimers */}
       <Footer />
     </div>

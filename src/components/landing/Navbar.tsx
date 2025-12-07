@@ -10,7 +10,7 @@ import { Menu, X, Leaf } from "lucide-react";
 const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Eligibility", href: "#eligibility" },
-  { label: "Rates & Fees", href: "#faq" },
+  // { label: "Rates & Fees", href: "#faq" },
   { label: "Reviews", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
@@ -30,15 +30,24 @@ export const Navbar = () => {
       <nav className="container-custom mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a 
-            href="#" 
+          <a
+            href="#"
             className="flex items-center gap-2 text-primary font-bold text-xl md:text-2xl"
-            aria-label="MapleCash Home"
+            aria-label="Myloanbuddy Home"
           >
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-accent rounded-lg flex items-center justify-center">
+            {/* <div className="w-8 h-8 md:w-10 md:h-10 bg-accent rounded-lg flex items-center justify-center">
               <Leaf className="w-5 h-5 md:w-6 md:h-6 text-accent-foreground" />
+            </div> */}
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center">
+              <img
+                src="/logo/logo.png"
+                alt="LoanBuddu logo"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <span>MapleCash</span>
+
+            {/* <span>LoanBuddy</span> */}
+            <span>Myloanbuddy</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -56,13 +65,13 @@ export const Navbar = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <button 
+            <button
               onClick={() => scrollToSection("#apply")}
               className="text-primary font-medium hover:text-accent transition-colors"
             >
               Re-Apply
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection("#apply")}
               className="btn-primary text-sm"
             >
@@ -72,7 +81,7 @@ export const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center gap-3">
-            <button 
+            <button
               onClick={() => scrollToSection("#apply")}
               className="btn-primary text-sm py-2 px-4"
             >
@@ -84,7 +93,11 @@ export const Navbar = () => {
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={isMenuOpen}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -102,7 +115,7 @@ export const Navbar = () => {
                   {link.label}
                 </button>
               ))}
-              <button 
+              <button
                 onClick={() => scrollToSection("#apply")}
                 className="text-left px-4 py-3 text-accent hover:bg-muted rounded-lg transition-colors font-medium"
               >

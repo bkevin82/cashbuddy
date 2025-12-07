@@ -16,7 +16,8 @@ export const ContactSection = () => {
               Need help? We're here for you
             </h2>
             <p className="text-lg text-muted-foreground">
-              Our friendly Canadian support team is ready to assist you with any questions.
+              Our friendly Canadian support team is ready to assist you with any
+              questions.
             </p>
           </div>
 
@@ -27,14 +28,18 @@ export const ContactSection = () => {
               <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-semibold text-card-foreground mb-2">Call Us</h3>
-              <a 
-                href="tel:1-800-555-0123" 
+              <h3 className="font-semibold text-card-foreground mb-2">
+                Call Us
+              </h3>
+              <a
+                href="tel:1-800-555-0123"
                 className="text-accent hover:underline font-medium"
               >
                 1-800-555-0123
               </a>
-              <p className="text-sm text-muted-foreground mt-1">Toll-free across Canada</p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Toll-free across Canada
+              </p>
             </div>
 
             {/* Email */}
@@ -42,14 +47,18 @@ export const ContactSection = () => {
               <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-semibold text-card-foreground mb-2">Email Us</h3>
-              <a 
-                href="mailto:support@maplecash.ca" 
+              <h3 className="font-semibold text-card-foreground mb-2">
+                Email Us
+              </h3>
+              <a
+                href="mailto:support@Myloanbuddy.ca"
                 className="text-accent hover:underline font-medium"
               >
-                support@maplecash.ca
+                support@Myloanbuddy.ca
               </a>
-              <p className="text-sm text-muted-foreground mt-1">We respond within 24 hours</p>
+              <p className="text-sm text-muted-foreground mt-1">
+                We respond within 24 hours
+              </p>
             </div>
 
             {/* Hours */}
@@ -57,9 +66,15 @@ export const ContactSection = () => {
               <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-semibold text-card-foreground mb-2">Support Hours</h3>
-              <p className="text-card-foreground font-medium">Mon–Fri: 8am–8pm ET</p>
-              <p className="text-sm text-muted-foreground mt-1">Sat–Sun: 10am–6pm ET</p>
+              <h3 className="font-semibold text-card-foreground mb-2">
+                Support Hours
+              </h3>
+              <p className="text-card-foreground font-medium">
+                Mon–Fri: 8am–8pm ET
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Sat–Sun: 10am–6pm ET
+              </p>
             </div>
           </div>
 
@@ -69,12 +84,20 @@ export const ContactSection = () => {
               <AlertTriangle className="w-5 h-5 text-yellow-600" />
             </div>
             <div>
-              <h4 className="font-semibold text-card-foreground mb-1">In a financial emergency?</h4>
+              <h4 className="font-semibold text-card-foreground mb-1">
+                In a financial emergency?
+              </h4>
               <p className="text-sm text-muted-foreground">
-                If you're experiencing a financial crisis, please consider reaching out to local support services. 
-                In Canada, you can contact the{" "}
-                <a href="#" className="text-primary underline hover:no-underline">Financial Consumer Agency of Canada</a>
-                {" "}or provincial debt helplines for free, confidential assistance.
+                If you're experiencing a financial crisis, please consider
+                reaching out to local support services. In Canada, you can
+                contact the{" "}
+                <a
+                  href="#"
+                  className="text-primary underline hover:no-underline"
+                >
+                  Financial Consumer Agency of Canada
+                </a>{" "}
+                or provincial debt helplines for free, confidential assistance.
               </p>
             </div>
           </div>

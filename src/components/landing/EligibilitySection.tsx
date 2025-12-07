@@ -25,7 +25,8 @@ export const EligibilitySection = () => {
               Basic eligibility requirements
             </h2>
             <p className="text-lg text-muted-foreground">
-              To apply for a loan with MapleCash, please ensure you meet the following criteria.
+              To apply for a loan with Myloanbuddy, please ensure you meet the
+              following criteria.
             </p>
           </div>
 
@@ -46,7 +47,9 @@ export const EligibilitySection = () => {
             <div className="mt-8 p-4 bg-secondary rounded-xl flex gap-3">
               <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                Meeting these requirements does not guarantee loan approval. All applications are subject to review and verification. Loan terms and availability may vary by province.
+                Meeting these requirements does not guarantee loan approval. All
+                applications are subject to review and verification. Loan terms
+                and availability may vary by province.
               </p>
             </div>
           </div>
