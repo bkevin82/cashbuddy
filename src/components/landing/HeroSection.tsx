@@ -41,7 +41,8 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="gradient-hero pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-8 relative overflow-hidden">
+    // <section className="gradient-hero pt-24 md:pt-32 pb-16 md:pb-24 px-4 md:px-8 relative overflow-hidden">
+    <section className="gradient-hero pt-20 md:pt-24 pb-16 md:pb-24 px-4 md:px-8 relative overflow-hidden -mt-4">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
@@ -51,7 +52,7 @@ export const HeroSection = () => {
       <div className="container-custom mx-auto relative">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="text-primary-foreground">
+          {/* <div className="text-primary-foreground">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 animate-fade-in">
               Get up to <span className="text-accent">$10,000</span> in minutes
               — 100% online in Canada
@@ -66,7 +67,7 @@ export const HeroSection = () => {
               most.
             </p>
 
-            {/* Key Benefits */}
+            
             <ul className="space-y-4 mb-8">
               {[
                 { icon: Clock, text: "Funding as fast as 30 minutes*" },
@@ -88,7 +89,7 @@ export const HeroSection = () => {
               ))}
             </ul>
 
-            {/* CTA Buttons */}
+
             <div
               className="flex flex-col sm:flex-row gap-4 animate-fade-in"
               style={{ animationDelay: "0.5s" }}
@@ -106,6 +107,79 @@ export const HeroSection = () => {
               >
                 Check Eligibility
               </button>
+            </div>
+          </div> */}
+
+          {/* LEFT CONTENT */}
+          <div className="text-white max-w-xl">
+            {/* Headline */}
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 animate-fade-in">
+              Need Cash Fast? Get up to{" "}
+              <span className="text-accent">$10,000</span> Today - Anywhere in
+              Canada 🇨🇦
+            </h1>
+
+            {/* Social Proof */}
+            <div
+              className="flex items-center gap-2 mb-6 animate-fade-in"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-yellow-400 fill-yellow-400"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049.293L6.176 6.057.868 6.91l4.16 4.06-.981 5.72L10 14.347l5.953 3.343-.981-5.72 4.16-4.06-5.308-.853L10 .293z" />
+                  </svg>
+                ))}
+              </div>
+              <span className="text-white/90 text-sm font-medium">
+                Trusted by 12,000+ Canadians
+              </span>
+            </div>
+
+            {/* Sub-Text */}
+            <p
+              className="text-lg md:text-xl text-white/90 mb-8 animate-fade-in"
+              style={{ animationDelay: "0.15s" }}
+            >
+              Apply online in minutes. Quick approval. No paperwork. No waiting.
+            </p>
+
+            {/* Benefits */}
+            <ul className="space-y-4 mb-10">
+              {[
+                { icon: Clock, text: "Funding as fast as 30 minutes*" },
+                { icon: Shield, text: "Bank-grade encrypted application" },
+                { icon: CheckCircle2, text: "All types of income accepted" },
+              ].map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-3 animate-fade-in"
+                  style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+                >
+                  <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 text-accent" />
+                  </div>
+                  <span className="text-white/95 font-medium">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA Buttons */}
+            <div
+              className="flex flex-col sm:flex-row gap-4 animate-fade-in"
+              style={{ animationDelay: "0.5s" }}
+            >
+              <button onClick={scrollToApply} className="btn-primary text-lg">
+                Start Application
+              </button>
+
+              <a href="/eligibility" className="btn-hero-ghost text-lg">
+                Check Eligibility
+              </a>
             </div>
           </div>
 

@@ -174,7 +174,7 @@ export const sampleBlogs = [
     title: "How Short-Term Loans Help When Emergencies Happen",
     excerpt:
       "Unexpected expenses can hit at the worst time. Here's how fast loans offer instant relief to Canadians...",
-    image: "/blog1.jpg",
+    image: "/blog/blog1.png",
     date: "Jan 10, 2025",
     readTime: "3 min read",
     category: "Loans",
@@ -184,7 +184,7 @@ export const sampleBlogs = [
     title: "Bad Credit? You Can Still Qualify for Emergency Funds",
     excerpt:
       "Your credit score shouldn’t define your ability to get help when you need it...",
-    image: "/blog2.jpg",
+    image: "/blog/blog2.png",
     date: "Jan 22, 2025",
     readTime: "4 min read",
     category: "Credit",
@@ -194,7 +194,7 @@ export const sampleBlogs = [
     title: "Top 5 Reasons Canadians Apply for Fast Loans",
     excerpt:
       "From car repairs to overdue bills — here’s why many Canadians use payday loans smartly...",
-    image: "/blog3.jpg",
+    image: "/blog/blog3.png",
     date: "Feb 5, 2025",
     readTime: "3 min read",
     category: "Loans",
@@ -204,7 +204,7 @@ export const sampleBlogs = [
     title: "Interac e-Transfer®: The Fastest Way to Receive Funds",
     excerpt:
       "Learn how most borrowers get money within hours via e-Transfer...",
-    image: "/blog4.jpg",
+    image: "/blog/blog4.png",
     date: "Feb 18, 2025",
     readTime: "2 min read",
     category: "Finance",
@@ -214,7 +214,7 @@ export const sampleBlogs = [
     title: "How to Borrow Responsibly & Avoid High Fees",
     excerpt:
       "Smart borrowing can help you stay financially strong and stress-free...",
-    image: "/blog5.jpg",
+    image: "/blog/blog5.png",
     date: "Mar 1, 2025",
     readTime: "5 min read",
     category: "Advice",

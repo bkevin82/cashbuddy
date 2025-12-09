@@ -28,7 +28,8 @@ export const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <nav className="container-custom mx-auto px-4 md:px-8">
+      {/* <nav className="container-custom mx-auto px-4 md:px-8"> */}
+      <nav className="container-custom mx-auto px-4 md:px-8 bg-transparent">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           {/* <Link
@@ -52,9 +53,9 @@ export const Navbar = () => {
             aria-label="Myloanbuddy Home"
           >
             <img
-              src="/logo/try1.png"
+              src="/logo/bold.png"
               alt="MyLoanbuddy Logo"
-              className="h-12 md:h-14 w-auto object-contain"
+              className="h-10 md:h-20 w-auto object-contain"
             />
 
             {/* <span className="text-primary font-bold text-xl md:text-2xl">

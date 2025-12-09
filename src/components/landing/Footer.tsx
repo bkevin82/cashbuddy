@@ -48,7 +48,8 @@ export const Footer = () => {
               className="flex items-center gap-2 text-primary-foreground font-bold text-xl mb-4"
             >
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-accent-foreground" />
+                {/* <Leaf className="w-6 h-6 text-accent-foreground" /> */}
+                <img src="logo/with_bg.jpg" alt="logo" />
               </div>
               <span>Myloanbuddy</span>
             </a>
@@ -130,21 +131,31 @@ export const Footer = () => {
         <div className="container-custom mx-auto px-4 md:px-8 py-6">
           <div className="text-xs text-primary-foreground/60 space-y-4">
             <p>
-              <strong>Example Cost of Borrowing:</strong> A $500 loan for 14
-              days in Ontario would have a cost of borrowing of $75 ($15 per
-              $100 borrowed), for a total repayment of $575. This represents an
-              Annual Percentage Rate (APR) of approximately 391%. The maximum
-              allowable cost of borrowing varies by province and is regulated by
-              provincial law.
+              <strong>Example Cost of Borrowing:</strong> A loan of $5,000 for
+              36 months at a 10.00% APR would result in a monthly payment of
+              $179.55, for a total repayment amount of $6,463.80, which includes
+              $1,463.80 in interest. To qualify for The Foundation program,
+              applicants must:
+              <br />
+              Have an active account with a bank or financial institution
+              approved by MyLoabBuddy. Provide a valid, government-issued
+              Canadian ID.
+              <br />
+              All guarantee references apply exclusively to the Evergreen Loan.
+              To qualify for the Evergreen Loan, you must first:
+              <br />
+              Successfully complete 25 Years in The Foundation program. Maintain
+              a minimum savings balance of $300. Have an active, approved bank
+              account and valid government-issued Canadian ID.
             </p>
-            <p>
+            {/* <p>
               <strong>Important:</strong> This website provides informational
               content only and does not constitute a binding loan offer. Loan
               approval, amounts, and terms are subject to verification and may
               vary based on your individual circumstances and provincial
               regulations. Myloanbuddy is a licensed payday lender operating
               under applicable provincial Consumer Protection Acts.
-            </p>
+            </p> */}
             <p>
               Interac e-Transfer® is a registered trademark of Interac Corp.
               Used under license.

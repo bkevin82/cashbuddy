@@ -1,125 +1,3 @@
-// import { Star, Shield, Clock, Award } from "lucide-react";
-
-// /**
-//  * TrustSection Component
-//  * Displays customer reviews and trust badges
-//  */
-
-// const reviews = [
-//   {
-//     name: "Sarah M.",
-//     province: "Ontario",
-//     rating: 5,
-//     text: "The application was incredibly quick. I had the funds in my account the same day!",
-//   },
-//   {
-//     name: "Raj P.",
-//     province: "British Columbia",
-//     rating: 5,
-//     text: "Friendly support team helped me through every step. Highly recommend for anyone in a tight spot.",
-//   },
-//   {
-//     name: "Mike T.",
-//     province: "Alberta",
-//     rating: 5,
-//     text: "No hassle, no faxing — just a simple online form. Exactly what I needed.",
-//   },
-//   {
-//     name: "Emma L.",
-//     province: "Quebec",
-//     rating: 5,
-//     text: "I was worried about my credit, but they considered my income and approved me quickly.",
-//   },
-//   {
-//     name: "James K.",
-//     province: "Manitoba",
-//     rating: 5,
-//     text: "Fast funding and clear terms. The whole process was transparent from start to finish.",
-//   },
-//   {
-//     name: "Lisa C.",
-//     province: "Nova Scotia",
-//     rating: 5,
-//     text: "Great experience! The customer service was available when I had questions at night.",
-//   },
-// ];
-
-// const trustBadges = [
-//   { icon: Award, label: "Trusted Since 2005" },
-//   { icon: Shield, label: "Licensed Canadian Lender" },
-//   { icon: Clock, label: "24/7 Secure Application" },
-// ];
-
-// const StarRating = ({ rating }: { rating: number }) => (
-//   <div
-//     className="flex gap-0.5"
-//     role="img"
-//     aria-label={`${rating} out of 5 stars`}
-//   >
-//     {[...Array(5)].map((_, i) => (
-//       <Star
-//         key={i}
-//         className={`w-4 h-4 ${
-//           i < rating ? "star-filled" : "text-muted-foreground/30"
-//         }`}
-//       />
-//     ))}
-//   </div>
-// );
-
-// export const TrustSection = () => {
-//   return (
-//     <section id="reviews" className="section-padding bg-muted">
-//       <div className="container-custom mx-auto">
-//         {/* Section Header */}
-//         <div className="text-center mb-12">
-//           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-//             Trusted by Canadians from coast to coast
-//           </h2>
-//           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-//             Join thousands of satisfied customers who've used Myloanbuddy for
-//             their short-term lending needs.
-//           </p>
-//         </div>
-
-//         {/* Trust Badges */}
-//         <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12">
-//           {trustBadges.map((badge, index) => (
-//             <div key={index} className="trust-badge">
-//               <badge.icon className="w-5 h-5 text-primary" />
-//               <span>{badge.label}</span>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Review Cards */}
-//         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-//           {reviews.map((review, index) => (
-//             <article
-//               key={index}
-//               className="card-elevated"
-//               style={{ animationDelay: `${index * 0.1}s` }}
-//             >
-//               <div className="flex items-center justify-between mb-3">
-//                 <div>
-//                   <p className="font-semibold text-card-foreground">
-//                     {review.name}
-//                   </p>
-//                   <p className="text-sm text-muted-foreground">
-//                     {review.province}
-//                   </p>
-//                 </div>
-//                 <StarRating rating={review.rating} />
-//               </div>
-//               <p className="text-card-foreground/80 italic">"{review.text}"</p>
-//             </article>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
 import { Star, Shield, Clock, Award, CheckCircle2 } from "lucide-react";
 
 /**
@@ -129,52 +7,52 @@ import { Star, Shield, Clock, Award, CheckCircle2 } from "lucide-react";
 
 const reviews = [
   {
-    name: "Sarah M.",
+    name: "Olivia Martin",
     province: "Ontario",
     rating: 5,
-    text: "The application was incredibly quick. I had the funds in my account the same day!",
+    text: "Despite my low credit score and multiple rejections from other lenders, my funding manager guided me through a simple insurance process that required no upfront payment or extra charges. The steps were clear and easy to follow, and within just 2 hours, I received my $3,000 loan. I’m very satisfied with the fast, professional, and transparent service.",
     date: "Nov 2025",
-    avatar: "https://i.pravatar.cc/100?img=47",
+    avatar: "/avatars/woman.jpg",
   },
   {
-    name: "Raj P.",
+    name: "William Campbell",
     province: "British Columbia",
     rating: 5,
-    text: "Friendly support team helped me through every step. Highly recommend for anyone in a tight spot.",
+    text: "When I was ready to go home, my car wouldn't start and it needed to be towed to a shop to be fixed. Since I hadn't been paid yet this week, I went online to see if I could find help. I found Myloanbuddy. It took me 5 minutes to fill out the form and get approved. I got the money the same day. Thank you!",
     date: "Nov 2025",
-    avatar: "https://i.pravatar.cc/100?img=12",
+    avatar: "/avatars/old_man_1.jpg",
   },
   {
     name: "Mike T.",
     province: "Alberta",
     rating: 5,
-    text: "No hassle, no faxing — just a simple online form. Exactly what I needed.",
+    text: "A pipe in my house burst and I didn't have any money at the time to fix it. My friend had used Myloanbuddy before and told me they could help. I went online and filled out a their form. After only a couple of minutes they told me I could get $10,000 got the money same day and was able to repair the pipe right away.",
     date: "Oct 2025",
-    avatar: "https://i.pravatar.cc/100?img=22",
+    avatar: "/avatars/old_man_2.jpg",
   },
   {
     name: "Emma L.",
     province: "Quebec",
     rating: 5,
-    text: "I was worried about my credit, but they considered my income and approved me quickly.",
+    text: "had to travel out of town unexpectedly for a family emergency, but I didn’t have enough saved for the trip. I tried Myloanbuddy after seeing their ad online. The process was straightforward, and I got the money within 24 hours. The fees were a bit higher than I expected, but it helped me make the trip on time.",
     date: "Sep 2025",
-    avatar: "https://i.pravatar.cc/100?img=30",
+    avatar: "/avatars/young_man.jpg",
   },
   {
     name: "James K.",
     province: "Manitoba",
     rating: 5,
-    text: "Fast funding and clear terms. The whole process was transparent from start to finish.",
+    text: "I had a sudden medical expense that I wasn’t prepared for and needed help urgently. I applied through MyLoanBuddy, and the process was quick and stress-free. Within just a few hours, the funds were in my account and I could pay the hospital bill right away. I’m really thankful — MyLoanBuddy truly came through when it mattered most.",
     date: "Sep 2025",
-    avatar: "https://i.pravatar.cc/100?img=51",
+    avatar: "/avatars/Raymod_Carter.jpeg",
   },
   {
     name: "Lisa C.",
     province: "Nova Scotia",
     rating: 5,
-    text: "Great experience! The customer service was available when I had questions at night.",
+    text: "I had a small medical bill come up that I wasn’t prepared for. I applied with Loan Quick and got approved right away. The process was quick, transparent, and stress-free. I’m really grateful for how fast they helped.",
     date: "Aug 2025",
-    avatar: "https://i.pravatar.cc/100?img=39",
+    avatar: "/avatars/lady.jpeg",
   },
 ];
 
@@ -220,7 +98,7 @@ export const TrustSection = () => {
         </div>
 
         {/* Rating Summary */}
-        <div className="flex flex-col items-center mb-12">
+        {/* <div className="flex flex-col items-center mb-12">
           <div className="flex items-center gap-2">
             <span className="text-3xl font-bold text-gray-900">
               {avgRating}
@@ -233,6 +111,33 @@ export const TrustSection = () => {
           <p className="text-sm text-green-600 font-medium mt-1">
             Rated Excellent
           </p>
+        </div> */}
+        {/* Rating Summary */}
+        <div className="flex flex-col items-center">
+          <div className="flex items-center gap-2">
+            <span className="text-3xl font-bold text-gray-900">
+              {avgRating}
+            </span>
+            <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
+            <span className="text-gray-600 font-medium">
+              | Based on {totalReviews} verified reviews
+            </span>
+          </div>
+          <p className="text-sm text-green-600 font-medium mt-1">
+            Rated Excellent
+          </p>
+        </div>
+
+        {/* Trust Index Badge */}
+        <div className="flex flex-col items-center mt-0 mb-12">
+          <img
+            src="/avatars/trust.png"
+            alt="TrustIndex Verified"
+            className="h-16 opacity-80"
+          />
+          <span className="text-xs text-gray-500 mt-1">
+            Verified Reviews Powered by TrustPilot®
+          </span>
         </div>
 
         {/* Trust Badges */}
