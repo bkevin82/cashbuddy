@@ -7,9 +7,16 @@ import { Shield, Clock, CheckCircle2, ChevronDown } from "lucide-react";
  */
 
 const provinces = [
-  "Alberta", "British Columbia", "Manitoba", "New Brunswick",
-  "Newfoundland and Labrador", "Nova Scotia", "Ontario",
-  "Prince Edward Island", "Quebec", "Saskatchewan",
+  "Alberta",
+  "British Columbia",
+  "Manitoba",
+  "New Brunswick",
+  "Newfoundland and Labrador",
+  "Nova Scotia",
+  "Ontario",
+  "Prince Edward Island",
+  "Quebec",
+  "Saskatchewan",
 ];
 
 const payFrequencies = [
@@ -20,14 +27,14 @@ const payFrequencies = [
 ];
 
 export const HeroSection = () => {
-  const [loanAmount, setLoanAmount] = useState(500);
+  const [loanAmount, setLoanAmount] = useState(3000);
   const [province, setProvince] = useState("");
   const [payFrequency, setPayFrequency] = useState("");
 
   // Calculate estimated repayment (example calculation)
   const interestRate = 15; // $15 per $100 borrowed (example)
   const totalRepayment = loanAmount + (loanAmount * interestRate) / 100;
-  const apr = 391; // Example APR for display
+  const apr = 9.99; // Example APR for display
 
   const scrollToApply = () => {
     document.querySelector("#apply")?.scrollIntoView({ behavior: "smooth" });
@@ -46,11 +53,17 @@ export const HeroSection = () => {
           {/* Left Content */}
           <div className="text-primary-foreground">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 animate-fade-in">
-              Get up to <span className="text-accent">$1,500</span> in minutes — 100% online in Canada
+              Get up to <span className="text-accent">$10,000</span> in minutes
+              — 100% online in Canada
             </h1>
-            
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Fast, secure short-term loans for Canadians from coast to coast. No paperwork, no faxing — just quick funds when you need them most.
+
+            <p
+              className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-fade-in"
+              style={{ animationDelay: "0.1s" }}
+            >
+              Fast, secure short-term loans for Canadians from coast to coast.
+              No paperwork, no faxing — just quick funds when you need them
+              most.
             </p>
 
             {/* Key Benefits */}
@@ -60,26 +73,35 @@ export const HeroSection = () => {
                 { icon: Shield, text: "Secure, encrypted online application" },
                 { icon: CheckCircle2, text: "All types of income considered" },
               ].map((item, index) => (
-                <li 
-                  key={index} 
+                <li
+                  key={index}
                   className="flex items-center gap-3 animate-fade-in"
                   style={{ animationDelay: `${0.2 + index * 0.1}s` }}
                 >
                   <div className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-5 h-5 text-accent" />
                   </div>
-                  <span className="text-primary-foreground/90 font-medium">{item.text}</span>
+                  <span className="text-primary-foreground/90 font-medium">
+                    {item.text}
+                  </span>
                 </li>
               ))}
             </ul>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            <div
+              className="flex flex-col sm:flex-row gap-4 animate-fade-in"
+              style={{ animationDelay: "0.5s" }}
+            >
               <button onClick={scrollToApply} className="btn-primary text-lg">
                 Start Application
               </button>
-              <button 
-                onClick={() => document.querySelector("#eligibility")?.scrollIntoView({ behavior: "smooth" })}
+              <button
+                onClick={() =>
+                  document
+                    .querySelector("/eligibility")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
                 className="btn-hero-ghost text-lg"
               >
                 Check Eligibility
@@ -106,8 +128,8 @@ export const HeroSection = () => {
                 </div>
                 <input
                   type="range"
-                  min="100"
-                  max="1500"
+                  min="3000"
+                  max="10000"
                   step="50"
                   value={loanAmount}
                   onChange={(e) => setLoanAmount(Number(e.target.value))}
@@ -115,8 +137,8 @@ export const HeroSection = () => {
                   aria-label="Select loan amount"
                 />
                 <div className="flex justify-between text-xs text-muted-foreground mt-2">
-                  <span>$100</span>
-                  <span>$1,500</span>
+                  <span>$3000</span>
+                  <span>$10,000</span>
                 </div>
               </div>
 
@@ -134,7 +156,9 @@ export const HeroSection = () => {
                   >
                     <option value="">Select your province</option>
                     {provinces.map((p) => (
-                      <option key={p} value={p}>{p}</option>
+                      <option key={p} value={p}>
+                        {p}
+                      </option>
                     ))}
                   </select>
                   <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none" />
@@ -155,7 +179,9 @@ export const HeroSection = () => {
                   >
                     <option value="">Select pay frequency</option>
                     {payFrequencies.map((pf) => (
-                      <option key={pf.value} value={pf.value}>{pf.label}</option>
+                      <option key={pf.value} value={pf.value}>
+                        {pf.label}
+                      </option>
                     ))}
                   </select>
                   <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground pointer-events-none" />
@@ -165,20 +191,32 @@ export const HeroSection = () => {
               {/* Estimated Results */}
               <div className="bg-secondary rounded-xl p-4 mb-4">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-sm text-muted-foreground">Estimated Repayment</span>
-                  <span className="text-xl font-bold text-primary">${totalRepayment.toFixed(2)}</span>
+                  <span className="text-sm text-muted-foreground">
+                    Estimated Repayment
+                  </span>
+                  <span className="text-xl font-bold text-primary">
+                    ${totalRepayment.toFixed(2)}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Example APR</span>
-                  <span className="text-sm font-medium text-card-foreground">{apr}%</span>
+                  <span className="text-sm text-muted-foreground">
+                    Example APR
+                  </span>
+                  <span className="text-sm font-medium text-card-foreground">
+                    {apr}%
+                  </span>
                 </div>
               </div>
 
               <p className="text-xs text-muted-foreground text-center mb-4">
-                *This is an example only, not a final loan offer. Actual rates and terms may vary based on your application.
+                *This is an example only, not a final loan offer. Actual rates
+                and terms may vary based on your application.
               </p>
 
-              <button onClick={scrollToApply} className="btn-primary w-full text-lg">
+              <button
+                onClick={scrollToApply}
+                className="btn-primary w-full text-lg"
+              >
                 Get Started Now
               </button>
             </div>

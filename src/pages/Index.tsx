@@ -67,7 +67,7 @@ const Index = () => {
       </main>
 
       {/* Footer with legal disclaimers */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
