@@ -457,9 +457,12 @@ export const HeroSection = () => {
                 Start Application
               </Link>
 
-              <a href="/eligibility" className="btn-hero-ghost text-lg">
+              {/* <a href="/eligibility" className="btn-hero-ghost text-lg">
                 Check Eligibility
-              </a>
+              </a> */}
+              <Link to="/eligibility" className="btn-hero-ghost text-lg">
+                Check Eligibility
+              </Link>
             </div>
           </div>
 
