@@ -395,7 +395,7 @@ const Apply = () => {
             </ul>
 
             <div className="mt-6 border-t pt-4 text-sm text-gray-600">
-              Loan Range: <b>$300 – $10,000</b>
+              Loan Range: <b>$3000 – $10,000</b>
               <br />
               Repayment Terms: <b>3 – 24 months</b>
             </div>

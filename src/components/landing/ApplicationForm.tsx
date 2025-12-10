@@ -515,10 +515,12 @@ const loanAmounts = [
 ];
 
 const employmentStatuses = [
-  "Full-time employed",
-  "Part-time employed",
-  "Government benefits",
-  "Disability benefits",
+  "Employment Income",
+  "Child Tax Credit Benefits",
+  "Unemployment Insurance",
+  "Private Disability Insurance",
+  "CPP & Private Pension",
+  "Self-Employed",
   "Neither",
 ];
 

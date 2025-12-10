@@ -40,25 +40,51 @@ const Contact = () => {
               </a>
             ),
           },
+          // {
+          //   icon: <Phone className="w-10 h-10 text-primary mx-auto mb-3" />,
+          //   title: "Call Us",
+          //   desc: "Monday – Saturday • 9AM – 9PM EST",
+          //   action: (
+          //     <a
+          //       href="tel:+11234567890"
+          //       className="underline text-primary font-medium"
+          //     >
+          //       +1 (123) 456-7890
+          //     </a>
+          //   ),
+          // },
           {
             icon: <Phone className="w-10 h-10 text-primary mx-auto mb-3" />,
             title: "Call Us",
-            desc: "Monday – Saturday • 9AM – 9PM EST",
+            desc: "Monday – Saturday ",
             action: (
-              <a
-                href="tel:+11234567890"
-                className="underline text-primary font-medium"
-              >
-                +1 (123) 456-7890
-              </a>
+              <div className="flex flex-col items-center gap-1">
+                <a
+                  href="tel:+14375620558"
+                  className="underline text-primary font-medium"
+                >
+                  (437) 562-0558
+                </a>
+                <a
+                  href="tel:+18005550123"
+                  className="underline text-primary font-medium"
+                >
+                  (800) 555-0123
+                </a>
+              </div>
             ),
           },
+
           {
             icon: <MapPin className="w-10 h-10 text-primary mx-auto mb-3" />,
             title: "Head Office",
             desc: "Proudly Canadian 🇨🇦",
             action: (
-              <p className="text-primary font-medium">Toronto, Ontario</p>
+              // <p className="text-primary font-medium">Toronto, Ontario</p>
+              <p className="text-muted-foreground">
+                15 Queen St W,
+                <br /> Toronto, ON M5H 3W4 🇨🇦
+              </p>
             ),
           },
         ].map((card, i) => (
