@@ -297,6 +297,7 @@
 
 import { useState } from "react";
 import { Shield, Clock, CheckCircle2, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const provinces = [
   "Alberta",
@@ -449,9 +450,12 @@ export const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 animate-fade-in"
               style={{ animationDelay: "0.5s" }}
             >
-              <button onClick={scrollToApply} className="btn-primary text-lg">
+              {/* <button onClick={scrollToApply} className="btn-primary text-lg">
                 Start Application
-              </button>
+              </button> */}
+              <Link to="/apply" className="btn-primary text-lg text-center">
+                Start Application
+              </Link>
 
               <a href="/eligibility" className="btn-hero-ghost text-lg">
                 Check Eligibility
