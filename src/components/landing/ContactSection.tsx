@@ -138,6 +138,14 @@ export const ContactSection = () => {
             >
               (437) 562-0558
             </a>
+            <br />
+            <a
+              href="tel:+18005550123"
+              className="text-accent font-semibold hover:underline"
+            >
+              (800) 555-0123
+            </a>
+
             <p className="text-sm text-muted-foreground mt-1">
               Toll-free across Canada
             </p>

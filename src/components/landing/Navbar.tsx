@@ -52,15 +52,17 @@ export const Navbar = () => {
             className="flex items-center gap-3"
             aria-label="Myloanbuddy Home"
           >
+            {/* <img
+              src="/logo/bold.png"
+              alt="MyLoanbuddy Logo"
+              className="h-12 md:h-20 w-auto object-contain"
+            /> */}
             <img
               src="/logo/bold.png"
               alt="MyLoanbuddy Logo"
-              className="h-10 md:h-20 w-auto object-contain"
+              className="h-12 sm:h-12 md:h-16 w-auto object-contain"
             />
 
-            {/* <span className="text-primary font-bold text-xl md:text-2xl">
-              Myloanbuddy
-            </span> */}
             <div className="flex flex-col leading-tight">
               <span className="font-bold text-xl md:text-2xl">
                 <span className="text-primary">MyLoan</span>

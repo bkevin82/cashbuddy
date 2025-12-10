@@ -189,14 +189,25 @@ const HowItWorks = () => {
         </p>
 
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-border aspect-video">
-          <iframe
+          {/* <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/MsZoq4ZuvZk"
             title="How Payday Loans Work"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          />
+          /> */}
+          <video
+            className="w-full h-full rounded-lg"
+            controls
+            poster="/videos/video-thumbnail.jpg"
+          >
+            <source
+              src="/videos/Payday_Loan_Explainer_Video_Script.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
