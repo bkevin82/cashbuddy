@@ -31,7 +31,7 @@ const reviews = [
     avatar: "/avatars/old_man_2.jpg",
   },
   {
-    name: "Emma L.",
+    name: "Anderson.",
     province: "Quebec",
     rating: 5,
     text: "had to travel out of town unexpectedly for a family emergency, but I didn’t have enough saved for the trip. I tried Myloanbuddy after seeing their ad online. The process was straightforward, and I got the money within 24 hours. The fees were a bit higher than I expected, but it helped me make the trip on time.",
