@@ -165,16 +165,6 @@ const Contact = () => {
         </p>
       </section>
 
-      {/* CTA */}
-      {/* <div className="text-center py-16 bg-primary text-white">
-        <h3 className="text-2xl font-bold mb-4">Need funds urgently?</h3>
-        <a
-          href="/apply"
-          className="bg-white text-primary hover:bg-muted px-8 py-4 rounded-lg text-lg font-medium transition"
-        >
-          Apply Now →
-        </a>
-      </div> */}
       <div className="text-center py-16 bg-secondary/20 text-foreground">
         <h3 className="text-2xl font-bold mb-4">Need funds urgently?</h3>
         <a href="/apply" className="btn-primary px-8 py-4 text-lg">
