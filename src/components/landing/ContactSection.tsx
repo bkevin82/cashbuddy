@@ -161,7 +161,8 @@ export const ContactSection = () => {
               href="mailto:support@myloanbuddy.ca"
               className="text-accent font-semibold hover:underline"
             >
-              support@myloanbuddy.ca
+              {/* support@myloanbuddy.ca */}
+              support@instantfund.ca
             </a>
             <p className="text-sm text-muted-foreground mt-1">
               We respond within 1–3 hours
@@ -228,7 +229,7 @@ export const ContactSection = () => {
 
         {/* Bottom Note */}
         <p className="text-center text-xs text-muted-foreground mt-6">
-          © 2025 Loan Quick Canada • All Rights Reserved • www.myloanbuddy.ca
+          © 2025 Loan Quick Canada • All Rights Reserved • www.instantfund.ca
         </p>
       </div>
     </section>

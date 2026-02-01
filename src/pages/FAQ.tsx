@@ -138,18 +138,18 @@ type FAQItem = {
 const faqItems: FAQItem[] = [
   // GENERAL
   {
-    q: "What is MyLoanBuddy?",
-    a: "MyLoanBuddy is an online lending platform that helps Canadians access short-term funds quickly and securely through a fully digital application process.",
+    q: "What is instantfund?",
+    a: "instantfund is an online lending platform that helps Canadians access short-term funds quickly and securely through a fully digital application process.",
     category: "General",
   },
   {
-    q: "Who can use MyLoanBuddy?",
+    q: "Who can use instantfund?",
     a: "Any Canadian resident who meets our basic eligibility criteria, such as age, income and having an active bank account, can apply for a loan.",
     category: "General",
   },
   {
-    q: "Is MyLoanBuddy available across Canada?",
-    a: "Yes, MyLoanBuddy serves borrowers across Canada, following all applicable provincial lending regulations.",
+    q: "Is instantfund available across Canada?",
+    a: "Yes, instantfund serves borrowers across Canada, following all applicable provincial lending regulations.",
     category: "General",
   },
   {
@@ -408,7 +408,7 @@ const FAQ = () => {
           .includes(searchTerm.toLowerCase());
         return matchesCategory && matchesSearch;
       }),
-    [activeCategory, searchTerm]
+    [activeCategory, searchTerm],
   );
 
   return (

@@ -36,7 +36,7 @@ const Contact = () => {
                 href="mailto:support@myloanbuddy.ca"
                 className="underline text-primary font-medium"
               >
-                support@myloanbuddy.ca
+                support@instantfund.ca
               </a>
             ),
           },
