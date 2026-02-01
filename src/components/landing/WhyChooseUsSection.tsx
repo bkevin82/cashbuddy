@@ -156,9 +156,9 @@ export const WhyChooseUsSection = () => {
             >
               <div
                 className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-4 
-                group-hover:bg-red-600 transition-all duration-300"
+                group-hover:bg-green-600 transition-all duration-300"
               >
-                <feature.icon className="w-7 h-7 text-red-600 group-hover:text-white transition-colors duration-300" />
+                <feature.icon className="w-7 h-7 text-green-600 group-hover:text-white transition-colors duration-300" />
               </div>
 
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -175,7 +175,7 @@ export const WhyChooseUsSection = () => {
         {/* CTA Button */}
         <div className="text-center mt-14">
           <Link to="/Eligibility">
-            <button className="bg-primary text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-primary/90 active:scale-95 transition">
+            <button className="btn-primary text-white font-semibold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-primary/90 active:scale-95 transition">
               Check Your Eligibility →
             </button>
           </Link>

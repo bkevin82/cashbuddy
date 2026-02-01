@@ -325,7 +325,7 @@ export const HeroSection = () => {
 
   const monthlyEMI = Math.round(
     (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, months)) /
-      (Math.pow(1 + monthlyRate, months) - 1)
+      (Math.pow(1 + monthlyRate, months) - 1),
   );
 
   const totalPayment = monthlyEMI * months;

@@ -8,60 +8,59 @@
 
 @layer base {
   :root {
-    /* Navy Blue - Primary brand color */
-    --primary: 201 78% 20%;
+    /* Primary – Royal Blue */
+    --primary: 215 60% 22%;
     --primary-foreground: 0 0% 100%;
 
-    /* Red Accent - Canadian inspired */
-    --accent: 0 70% 50%;
+    /* Accent – Emerald Green */
+    --accent: 152 60% 45%;
     --accent-foreground: 0 0% 100%;
 
     /* Backgrounds */
-    --background: 0 0% 100%;
-    --foreground: 210 20% 15%;
+    --background: 210 40% 98%;
+    --foreground: 215 25% 15%;
 
-    /* Light gray sections */
-    --muted: 0 0% 96%;
-    --muted-foreground: 210 10% 40%;
+    /* Muted / sections */
+    --muted: 215 20% 92%;
+    --muted-foreground: 215 15% 40%;
 
     /* Cards */
     --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card-foreground: 215 25% 15%;
 
-    /* Secondary - lighter navy */
-    --secondary: 201 40% 95%;
-    --secondary-foreground: 201 78% 20%;
+    /* Secondary – soft blue */
+    --secondary: 215 50% 96%;
+    --secondary-foreground: 215 60% 22%;
 
     /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Destructive */
+    /* Destructive (still red but subtle) */
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & inputs */
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 201 78% 20%;
+    --border: 215 20% 85%;
+    --input: 215 20% 85%;
+    --ring: 152 60% 45%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --navy: 201 78% 20%;
-    --navy-light: 201 60% 30%;
-    --navy-dark: 201 78% 15%;
-    --red-accent: 0 70% 50%;
-    --red-accent-hover: 0 70% 45%;
-    --gray-light: 0 0% 96%;
-    --gray-medium: 210 10% 85%;
+    --navy: 215 60% 22%;
+    --navy-light: 215 55% 35%;
+    --navy-dark: 215 60% 16%;
+
+    --gray-light: 215 20% 96%;
+    --gray-medium: 215 15% 85%;
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(201 78% 20% / 0.1);
-    --shadow-card: 0 8px 30px -10px hsl(201 78% 20% / 0.15);
-    --shadow-button: 0 4px 14px -3px hsl(0 70% 50% / 0.4);
+    --shadow-soft: 0 4px 20px -4px hsl(215 60% 22% / 0.1);
+    --shadow-card: 0 10px 32px -12px hsl(215 60% 22% / 0.18);
+    --shadow-button: 0 6px 18px -6px hsl(152 60% 45% / 0.45);
 
-    /* Sidebar (keeping defaults) */
+    /* Sidebar (unchanged) */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -121,7 +120,11 @@
 @layer components {
   /* Button variants */
   .btn-primary {
-    @apply bg-accent text-accent-foreground font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-[hsl(var(--red-accent-hover))] shadow-[var(--shadow-button)] hover:shadow-lg hover:-translate-y-0.5;
+    @apply bg-accent text-accent-foreground font-semibold px-6 py-3 rounded-lg
+  transition-all duration-200
+  hover:bg-accent/90
+  shadow-[var(--shadow-button)]
+  hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .btn-secondary {
@@ -159,6 +162,7 @@
     background: linear-gradient(
       135deg,
       hsl(var(--navy)) 0%,
+      hsl(var(--navy-light)) 50%,
       hsl(var(--navy-dark)) 100%
     );
   }
@@ -183,6 +187,18 @@
 }
 
 @layer utilities {
+  .glass {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--card) / 0.55),
+      hsl(var(--card) / 0.35)
+    );
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid hsl(var(--border) / 0.4);
+    box-shadow: var(--shadow-card);
+  }
+
   /* Smooth transitions */
   .transition-smooth {
     @apply transition-all duration-300 ease-out;
