@@ -7,7 +7,7 @@ import { Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const footerLinks = {
   company: [
-    { label: "About Us", href: "/About-Us" },
+    { label: "About Us", href: "/about-Us" },
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "/press" },
     { label: "Contact", href: "/contact" },
