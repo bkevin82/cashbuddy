@@ -203,7 +203,7 @@ const HowItWorks = () => {
             poster="/videos/video-thumbnail.jpg"
           >
             <source
-              src="/videos/Payday_Loan_Explainer_Video_Script.mp4"
+              src="/videos/InstantFunds_Logo_Video_Ready.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
