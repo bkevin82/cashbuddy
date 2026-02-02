@@ -136,7 +136,7 @@ export const ContactSection = () => {
               href="tel:+14375620558"
               className="text-accent font-semibold hover:underline"
             >
-              (437) 562-0558
+              (705) 408-4763
             </a>
             <br />
             <a
@@ -176,7 +176,7 @@ export const ContactSection = () => {
             </div>
             <h3 className="font-bold text-lg mb-1">Office Location</h3>
             <p className="text-muted-foreground">
-              15 Queen St W,
+              19 Queen St W,
               <br /> Toronto, ON M5H 3W4 🇨🇦
             </p>
           </div>

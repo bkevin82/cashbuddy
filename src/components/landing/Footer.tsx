@@ -138,7 +138,7 @@ export const Footer = () => {
               applicants must:
               <br />
               Have an active account with a bank or financial institution
-              approved by MyLoabBuddy. Provide a valid, government-issued
+              approved by instantfund. Provide a valid, government-issued
               Canadian ID.
               <br />
               All guarantee references apply exclusively to the Evergreen Loan.

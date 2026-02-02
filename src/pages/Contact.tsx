@@ -63,7 +63,7 @@ const Contact = () => {
                   href="tel:+14375620558"
                   className="underline text-primary font-medium"
                 >
-                  (437) 562-0558
+                  (705) 408-4763
                 </a>
                 <a
                   href="tel:+18005550123"
@@ -82,7 +82,7 @@ const Contact = () => {
             action: (
               // <p className="text-primary font-medium">Toronto, Ontario</p>
               <p className="text-muted-foreground">
-                15 Queen St W,
+                19 Queen St W,
                 <br /> Toronto, ON M5H 3W4 🇨🇦
               </p>
             ),
