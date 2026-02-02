@@ -7,22 +7,22 @@ import { Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const footerLinks = {
   company: [
-    { label: "About Us", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Press", href: "#" },
-    { label: "Contact", href: "#contact" },
+    { label: "About Us", href: "/About-Us" },
+    { label: "Careers", href: "/careers" },
+    { label: "Press", href: "/press" },
+    { label: "Contact", href: "/contact" },
   ],
   legal: [
-    { label: "Terms & Conditions", href: "#" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Licensing", href: "#" },
-    { label: "Sitemap", href: "#" },
+    { label: "Terms & Conditions", href: "/terms" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Licensing", href: "/licensing" },
+    { label: "Sitemap", href: "/sitemap" },
   ],
   resources: [
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Eligibility", href: "#eligibility" },
-    { label: "Blog", href: "#" },
+    { label: "How It Works", href: "/how-it-works" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Eligibility", href: "/eligibility" },
+    { label: "Blog", href: "/blog" },
   ],
 };
 

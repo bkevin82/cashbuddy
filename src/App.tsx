@@ -43,6 +43,14 @@ import BlogDetails from "./pages/BlogDetails";
 import FAQ from "./pages/FAQ";
 import Apply from "./pages/Apply";
 import ApplyStep2 from "./pages/ApplyStep2";
+import AboutUs from "./pages/AboutUs";
+import Careers from "./pages/Careers";
+import Press from "./pages/Press";
+
+import Terms from "./pages/Terms";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Licensing from "./pages/Licensing";
+import Sitemap from "./pages/Sitemap";
 
 import Contact from "./pages/Contact";
 
@@ -73,6 +81,15 @@ const App = () => (
           <Route path="contact" element={<Contact />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/apply/step-2" element={<ApplyStep2 />} />
+
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/press" element={<Press />} />
+
+          <Route path="terms" element={<Terms />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="licensing" element={<Licensing />} />
+          <Route path="sitemap" element={<Sitemap />} />
         </Route>
 
         {/* Fallback page */}

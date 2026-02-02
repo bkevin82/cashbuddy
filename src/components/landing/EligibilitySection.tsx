@@ -82,8 +82,8 @@ export const EligibilitySection = () => {
           Do You Qualify for Fast Online Loans?
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          These are the **minimum** requirements to apply with MyLoan
-          <span className="text-accent font-bold">Buddy</span> 🇨🇦
+          These are the **minimum** requirements to apply with instant
+          <span className="text-accent font-bold">fund</span> 🇨🇦
         </p>
 
         {/* Requirements Box */}
