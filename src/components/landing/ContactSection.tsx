@@ -229,7 +229,7 @@ export const ContactSection = () => {
 
         {/* Bottom Note */}
         <p className="text-center text-xs text-muted-foreground mt-6">
-          © 2026 Loan Quick Canada • All Rights Reserved • www.instantfund.ca
+          © 2026 instantfund Canada • All Rights Reserved • www.instantfund.ca
         </p>
       </div>
     </section>
