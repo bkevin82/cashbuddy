@@ -162,7 +162,7 @@ export const ContactSection = () => {
               className="text-accent font-semibold hover:underline"
             >
               {/* support@myloanbuddy.ca */}
-              support@instantfund.ca
+              support@Cashbuddy.ca
             </a>
             <p className="text-sm text-muted-foreground mt-1">
               We respond within 1–3 hours
@@ -229,7 +229,7 @@ export const ContactSection = () => {
 
         {/* Bottom Note */}
         <p className="text-center text-xs text-muted-foreground mt-6">
-          © 2026 instantfund Canada • All Rights Reserved • www.instantfund.ca
+          © 2026 Cashbuddy Canada • All Rights Reserved • www.Cashbuddy.ca
         </p>
       </div>
     </section>

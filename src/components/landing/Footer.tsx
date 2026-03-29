@@ -49,9 +49,9 @@ export const Footer = () => {
             >
               <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
                 {/* <Leaf className="w-6 h-6 text-accent-foreground" /> */}
-                <img src="logo/new_branch_logo.png" alt="logo" />
+                <img src="logo/Cash_Buddy.png" alt="logo" />
               </div>
-              <span>instantfund</span>
+              <span>Cashbuddy</span>
             </a>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
               Helping Canadians access fast, transparent short-term loans since
@@ -138,8 +138,8 @@ export const Footer = () => {
               applicants must:
               <br />
               Have an active account with a bank or financial institution
-              approved by instantfund. Provide a valid, government-issued
-              Canadian ID.
+              approved by Cashbuddy. Provide a valid, government-issued Canadian
+              ID.
               <br />
               All guarantee references apply exclusively to the Evergreen Loan.
               To qualify for the Evergreen Loan, you must first:
@@ -168,7 +168,7 @@ export const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container-custom mx-auto px-4 md:px-8 py-4">
           <p className="text-sm text-primary-foreground/60 text-center">
-            © {currentYear} instantfund Financial Services Inc. All rights
+            © {currentYear} Cashbuddy Financial Services Inc. All rights
             reserved. | Licensed Lender in Canada
           </p>
         </div>

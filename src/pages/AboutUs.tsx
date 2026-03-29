@@ -41,7 +41,7 @@ const AboutUs = () => {
       {/* HERO SECTION */}
       <section className="pt-32 pb-20 bg-primary text-primary-foreground text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          About InstantFund.ca
+          About Cashbuddy.ca
         </h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
           A modern financial platform built to deliver fast, secure, and
@@ -54,7 +54,7 @@ const AboutUs = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Our Story</h2>
           <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            InstantFund.ca was created with one simple goal — to remove the
+            Cashbuddy.ca was created with one simple goal — to remove the
             complexity and delays from accessing short-term financial support.
             By combining technology with responsible lending practices, we help
             Canadians get access to funds quickly while maintaining clarity,
@@ -92,10 +92,10 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* WHY INSTANTFUND */}
+      {/* WHY Cashbuddy */}
       <section className="py-20 px-4 text-center max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-foreground">
-          Why Choose InstantFund.ca
+          Why Choose Cashbuddy.ca
         </h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">

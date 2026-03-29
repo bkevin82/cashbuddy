@@ -164,14 +164,14 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center gap-2" aria-label="Home">
             <img
               // src="/logo/bold.png"
-              src="/logo/new_branch_logo.png"
-              alt="MyLoanBuddy Logo"
+              src="/logo/Cash_Buddy.png"
+              alt="Cashbuddy Logo"
               className="h-12 xs:h-9 sm:h-10 md:h-14 w-auto object-contain"
             />
             <div className="flex flex-col leading-tight">
               <span className="font-bold text-[15px] xs:text-base sm:text-lg md:text-2xl">
-                <span className="text-primary">instant</span>
-                <span className="text-accent">fund</span>
+                <span className="text-primary">Cash</span>
+                <span className="text-accent">buddy</span>
                 {/* <span className="text-primary">MyLoan</span>
                 <span className="text-accent">Buddy</span> */}
               </span>

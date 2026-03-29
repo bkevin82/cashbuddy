@@ -138,18 +138,18 @@ type FAQItem = {
 const faqItems: FAQItem[] = [
   // GENERAL
   {
-    q: "What is instantfund?",
-    a: "instantfund is an online lending platform that helps Canadians access short-term funds quickly and securely through a fully digital application process.",
+    q: "What is Cashbuddy?",
+    a: "Cashbuddy is an online lending platform that helps Canadians access short-term funds quickly and securely through a fully digital application process.",
     category: "General",
   },
   {
-    q: "Who can use instantfund?",
+    q: "Who can use Cashbuddy?",
     a: "Any Canadian resident who meets our basic eligibility criteria, such as age, income and having an active bank account, can apply for a loan.",
     category: "General",
   },
   {
-    q: "Is instantfund available across Canada?",
-    a: "Yes, instantfund serves borrowers across Canada, following all applicable provincial lending regulations.",
+    q: "Is Cashbuddy available across Canada?",
+    a: "Yes, Cashbuddy serves borrowers across Canada, following all applicable provincial lending regulations.",
     category: "General",
   },
   {

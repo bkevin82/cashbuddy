@@ -66,7 +66,7 @@ const Sitemap = () => {
       <section className="pt-32 pb-20 bg-primary text-primary-foreground text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Sitemap</h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
-          Explore all sections of InstantFund.ca from one place
+          Explore all sections of Cashbuddy.ca from one place
         </p>
       </section>
 

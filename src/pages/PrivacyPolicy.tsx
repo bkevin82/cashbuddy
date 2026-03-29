@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
       <section className="pt-32 pb-20 bg-primary text-primary-foreground text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
-          How InstantFund.ca collects, uses, and protects your information
+          How Cashbuddy.ca collects, uses, and protects your information
         </p>
       </section>
 
@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
               1. Introduction
             </h2>
             <p>
-              InstantFund.ca is committed to safeguarding your privacy. This
+              Cashbuddy.ca is committed to safeguarding your privacy. This
               Privacy Policy explains how we collect, use, store, and protect
               personal information when you access or use our website and
               services.
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
               4. Information Sharing
             </h2>
             <p>
-              InstantFund.ca does not sell personal data. Information may be
+              Cashbuddy.ca does not sell personal data. Information may be
               shared with licensed third-party lenders, service providers, or
               regulatory authorities only when necessary to provide services or
               comply with the law.
@@ -146,7 +146,7 @@ const PrivacyPolicy = () => {
               10. Changes to This Policy
             </h2>
             <p>
-              InstantFund.ca reserves the right to update this Privacy Policy at
+              Cashbuddy.ca reserves the right to update this Privacy Policy at
               any time. Continued use of the website constitutes acceptance of
               any changes.
             </p>
@@ -161,7 +161,7 @@ const PrivacyPolicy = () => {
               If you have questions or concerns regarding this Privacy Policy,
               please contact us at{" "}
               <span className="font-medium text-foreground">
-                privacy@instantfund.ca
+                privacy@Cashbuddy.ca
               </span>
               .
             </p>

@@ -217,7 +217,7 @@ const Eligibility = () => {
           </div>
 
           <p className="text-xs text-muted-foreground mt-6">
-            *Statistics based on instantfund performance data — 2024
+            *Statistics based on Cashbuddy performance data — 2024
           </p>
         </div>
       </section>

@@ -53,7 +53,7 @@ const Careers = () => {
       {/* HERO SECTION */}
       <section className="pt-32 pb-20 bg-primary text-primary-foreground text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Careers at InstantFund.ca
+          Careers at Cashbuddy.ca
         </h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
           Build your career while helping Canadians access fast and secure
@@ -132,7 +132,7 @@ const Careers = () => {
       <section className="py-20 px-4 bg-background text-center">
         <h2 className="text-3xl font-bold mb-6 text-foreground">Our Culture</h2>
         <p className="text-muted-foreground max-w-3xl mx-auto mb-10">
-          At InstantFund.ca, we foster a culture of trust, ownership, and
+          At Cashbuddy.ca, we foster a culture of trust, ownership, and
           innovation. We believe in empowering our team members to do meaningful
           work and grow together.
         </p>

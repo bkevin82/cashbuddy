@@ -18,7 +18,8 @@
 
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
-import { TrustSection } from "@/components/landing/TrustSection";
+// import { TrustSection } from "@/components/landing/TrustSection";
+import TrustSection from "@/components/landing/TrustSection";
 import { HowItWorksSection } from "@/components/landing/HowItWorksSection";
 import { IncomeTypesSection } from "@/components/landing/IncomeTypesSection";
 import { WhyChooseUsSection } from "@/components/landing/WhyChooseUsSection";
@@ -41,9 +42,6 @@ const Index = () => {
         {/* Hero with loan calculator */}
         <HeroSection />
 
-        {/* Trust badges and reviews */}
-        <TrustSection />
-
         {/* 3-step process */}
         <HowItWorksSection />
 
@@ -52,6 +50,9 @@ const Index = () => {
 
         {/* Value proposition */}
         <WhyChooseUsSection />
+
+        {/* Trust badges and reviews */}
+        <TrustSection />
 
         {/* Eligibility requirements */}
         <EligibilitySection />

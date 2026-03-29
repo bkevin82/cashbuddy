@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 const pressReleases = [
   {
-    title: "InstantFund.ca Launches Digital Lending Platform",
+    title: "Cashbuddy.ca Launches Digital Lending Platform",
     date: "January 2025",
     summary:
-      "InstantFund.ca officially launches its digital platform to provide fast, secure, and transparent funding solutions across Canada.",
+      "Cashbuddy.ca officially launches its digital platform to provide fast, secure, and transparent funding solutions across Canada.",
   },
   {
-    title: "InstantFund.ca Expands Responsible Lending Initiatives",
+    title: "Cashbuddy.ca Expands Responsible Lending Initiatives",
     date: "March 2025",
     summary:
       "The company strengthens its commitment to ethical and transparent lending through enhanced compliance and customer-first policies.",
@@ -29,7 +29,7 @@ const Press = () => {
       <section className="pt-32 pb-20 bg-primary text-primary-foreground text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Press & Media</h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
-          News, announcements, and media resources from InstantFund.ca
+          News, announcements, and media resources from Cashbuddy.ca
         </p>
       </section>
 
@@ -47,7 +47,7 @@ const Press = () => {
           <div className="inline-flex items-center gap-3 bg-secondary rounded-full px-6 py-3 shadow-card">
             <Mail className="w-5 h-5 text-primary" />
             <span className="font-medium text-foreground">
-              press@instantfund.ca
+              press@Cashbuddy.ca
             </span>
           </div>
         </div>
@@ -96,13 +96,13 @@ const Press = () => {
           Media Resources
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
-          Download official InstantFund.ca logos, brand assets, and company
+          Download official Cashbuddy.ca logos, brand assets, and company
           information for media use.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
           <a
-            href="/media/InstantFund_Media_Kit.zip"
+            href="/media/Cashbuddy_Media_Kit.zip"
             className="btn-secondary flex items-center gap-2 px-6 py-3"
           >
             <Download className="w-5 h-5" />
@@ -114,7 +114,7 @@ const Press = () => {
             className="btn-ghost flex items-center gap-2 px-6 py-3"
           >
             <Megaphone className="w-5 h-5" />
-            Learn About InstantFund.ca
+            Learn About Cashbuddy.ca
           </Link>
         </div>
       </section>

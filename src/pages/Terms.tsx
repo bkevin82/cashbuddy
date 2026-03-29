@@ -7,7 +7,7 @@ const Terms = () => {
           Terms & Conditions
         </h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
-          Please read these terms carefully before using InstantFund.ca
+          Please read these terms carefully before using Cashbuddy.ca
         </p>
       </section>
 
@@ -21,7 +21,7 @@ const Terms = () => {
             </h2>
             <p>
               These Terms & Conditions (“Terms”) govern your access to and use
-              of the InstantFund.ca website, services, and any related content
+              of the Cashbuddy.ca website, services, and any related content
               (collectively, the “Service”). By accessing or using this website,
               you agree to be legally bound by these Terms.
             </p>
@@ -33,7 +33,7 @@ const Terms = () => {
               2. Eligibility
             </h2>
             <p>
-              To use InstantFund.ca, you must be at least 18 years of age and a
+              To use Cashbuddy.ca, you must be at least 18 years of age and a
               legal resident of Canada. By using the Service, you confirm that
               you meet all eligibility requirements under applicable laws and
               regulations.
@@ -46,10 +46,10 @@ const Terms = () => {
               3. Nature of Services
             </h2>
             <p>
-              InstantFund.ca provides an online platform that allows users to
+              Cashbuddy.ca provides an online platform that allows users to
               submit loan inquiries and access information related to short-term
-              financial products. InstantFund.ca does not guarantee loan
-              approval, funding amounts, interest rates, or repayment terms.
+              financial products. Cashbuddy.ca does not guarantee loan approval,
+              funding amounts, interest rates, or repayment terms.
             </p>
           </div>
 
@@ -73,9 +73,9 @@ const Terms = () => {
             </h2>
             <p>
               You agree to provide accurate, complete, and up-to-date
-              information when submitting forms on InstantFund.ca. You are
-              solely responsible for maintaining the confidentiality of any
-              personal or account-related information.
+              information when submitting forms on Cashbuddy.ca. You are solely
+              responsible for maintaining the confidentiality of any personal or
+              account-related information.
             </p>
           </div>
 
@@ -111,8 +111,8 @@ const Terms = () => {
             </h2>
             <p>
               All content, trademarks, logos, designs, and materials on
-              InstantFund.ca are the intellectual property of InstantFund.ca or
-              its licensors and may not be copied, reproduced, or distributed
+              Cashbuddy.ca are the intellectual property of Cashbuddy.ca or its
+              licensors and may not be copied, reproduced, or distributed
               without prior written permission.
             </p>
           </div>
@@ -124,7 +124,7 @@ const Terms = () => {
             </h2>
             <p>
               This website may contain links to third-party websites.
-              InstantFund.ca is not responsible for the content, policies, or
+              Cashbuddy.ca is not responsible for the content, policies, or
               practices of any third-party services.
             </p>
           </div>
@@ -135,8 +135,8 @@ const Terms = () => {
               10. Limitation of Liability
             </h2>
             <p>
-              To the maximum extent permitted by law, InstantFund.ca shall not
-              be liable for any indirect, incidental, consequential, or special
+              To the maximum extent permitted by law, Cashbuddy.ca shall not be
+              liable for any indirect, incidental, consequential, or special
               damages arising from your use of or inability to use the website
               or services.
             </p>
@@ -148,7 +148,7 @@ const Terms = () => {
               11. Indemnification
             </h2>
             <p>
-              You agree to indemnify and hold harmless InstantFund.ca, its
+              You agree to indemnify and hold harmless Cashbuddy.ca, its
               affiliates, and partners from any claims, losses, damages, or
               expenses resulting from your violation of these Terms.
             </p>
@@ -160,8 +160,8 @@ const Terms = () => {
               12. Termination
             </h2>
             <p>
-              InstantFund.ca reserves the right to suspend or terminate access
-              to the website at any time, without notice, for any violation of
+              Cashbuddy.ca reserves the right to suspend or terminate access to
+              the website at any time, without notice, for any violation of
               these Terms.
             </p>
           </div>
@@ -198,7 +198,7 @@ const Terms = () => {
               For questions regarding these Terms & Conditions, please contact
               us at{" "}
               <span className="font-medium text-foreground">
-                support@instantfund.ca
+                support@Cashbuddy.ca
               </span>
               .
             </p>

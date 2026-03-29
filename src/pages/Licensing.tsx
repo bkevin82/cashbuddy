@@ -7,7 +7,7 @@ const Licensing = () => {
           Licensing & Compliance
         </h1>
         <p className="text-lg max-w-2xl mx-auto opacity-90">
-          Regulatory information and compliance standards for InstantFund.ca
+          Regulatory information and compliance standards for Cashbuddy.ca
         </p>
       </section>
 
@@ -20,7 +20,7 @@ const Licensing = () => {
               1. Regulatory Overview
             </h2>
             <p>
-              InstantFund.ca operates in accordance with applicable Canadian
+              Cashbuddy.ca operates in accordance with applicable Canadian
               federal and provincial consumer protection and lending
               regulations. Licensing requirements and loan terms may vary by
               province or territory.
@@ -34,7 +34,7 @@ const Licensing = () => {
             </h2>
             <p>
               Short-term and payday lending in Canada is regulated at the
-              provincial level. InstantFund.ca works only with lenders that are
+              provincial level. Cashbuddy.ca works only with lenders that are
               properly licensed or registered in the provinces where services
               are offered.
             </p>
@@ -43,12 +43,12 @@ const Licensing = () => {
           {/* ROLE */}
           <div>
             <h2 className="text-2xl font-bold text-foreground mb-3">
-              3. Role of InstantFund.ca
+              3. Role of Cashbuddy.ca
             </h2>
             <p>
-              InstantFund.ca functions as a digital platform that facilitates
-              loan inquiries and provides informational services. We do not
-              issue loans directly unless explicitly stated. Loan agreements are
+              Cashbuddy.ca functions as a digital platform that facilitates loan
+              inquiries and provides informational services. We do not issue
+              loans directly unless explicitly stated. Loan agreements are
               entered into between users and third-party lenders.
             </p>
           </div>
@@ -87,7 +87,7 @@ const Licensing = () => {
               For questions related to licensing or regulatory compliance,
               please contact us at{" "}
               <span className="font-medium text-foreground">
-                compliance@instantfund.ca
+                compliance@Cashbuddy.ca
               </span>
               .
             </p>
