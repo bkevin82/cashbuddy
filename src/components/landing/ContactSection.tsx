@@ -136,14 +136,16 @@ export const ContactSection = () => {
               href="tel:+14375620558"
               className="text-accent font-semibold hover:underline"
             >
-              (705) 408-4763
+              {/* (705) 408-4763 */}
+              +1 (705) 664-0327
             </a>
             <br />
             <a
               href="tel:+18005550123"
               className="text-accent font-semibold hover:underline"
             >
-              (800) 555-0123
+              {/* (800) 555-0123 */}
+              +1 ( 800 ) 888-4686
             </a>
 
             <p className="text-sm text-muted-foreground mt-1">

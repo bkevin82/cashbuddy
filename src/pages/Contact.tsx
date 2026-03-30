@@ -63,13 +63,15 @@ const Contact = () => {
                   href="tel:+14375620558"
                   className="underline text-primary font-medium"
                 >
-                  (705) 408-4763
+                  {/* (705) 408-4763 */}
+                  +1 (705) 664-0327
                 </a>
                 <a
                   href="tel:+18005550123"
                   className="underline text-primary font-medium"
                 >
-                  (800) 555-0123
+                  {/* (800) 555-0123 */}
+                  +1 ( 800 ) 888-4686
                 </a>
               </div>
             ),

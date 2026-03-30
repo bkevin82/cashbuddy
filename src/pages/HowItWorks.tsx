@@ -141,7 +141,7 @@ const HowItWorks = () => {
           </p>
 
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-left text-sm shadow-lg rounded-xl overflow-hidden">
+            {/* <table className="w-full border-collapse text-left text-sm shadow-lg rounded-xl overflow-hidden">
               <thead className="bg-primary text-white text-sm uppercase tracking-wide">
                 <tr>
                   <th className="p-4">Borrowed Amount</th>
@@ -151,7 +151,7 @@ const HowItWorks = () => {
               </thead>
               <tbody>
                 {[
-                  { amount: "$3,000", term: "14 days", repayment: "$3,450" },
+                  { amount: "$3,000", term: "36 month.", repayment: "$3,450" },
                   { amount: "$5,000", term: "14 days", repayment: "$5,750" },
                   { amount: "$8,000", term: "14 days", repayment: "$9,200" },
                   { amount: "$10,000", term: "14 days", repayment: "$11,500" },
@@ -165,6 +165,59 @@ const HowItWorks = () => {
                     <td className="p-4">{row.amount}</td>
                     <td className="p-4">{row.term}</td>
                     <td className="p-4">{row.repayment}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table> */}
+            <table className="w-full border-collapse text-left text-sm shadow-lg rounded-xl overflow-hidden">
+              <thead className="bg-primary text-white text-sm uppercase tracking-wide">
+                <tr>
+                  <th className="p-4">Borrowed Amount</th>
+                  <th className="p-4">Term</th>
+                  <th className="p-4">Total Repayment</th>
+                  <th className="p-4">Monthly Payment</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {[
+                  {
+                    amount: "$3,000",
+                    term: "36 months (10%)",
+                    repayment: "$3,900",
+                    monthly: "$108.33",
+                  },
+                  {
+                    amount: "$5,000",
+                    term: "36 months (10%)",
+                    repayment: "$6,500",
+                    monthly: "$170.55",
+                  },
+                  {
+                    amount: "$8,000",
+                    term: "60 months (8%)",
+                    repayment: "$11,250",
+                    monthly: "$187.05",
+                  },
+                  {
+                    amount: "$10,000",
+                    term: "60 months (6%)",
+                    repayment: "$13,000",
+                    monthly: "$216.06",
+                  },
+                ].map((row, idx) => (
+                  <tr
+                    key={idx}
+                    className={`${
+                      idx % 2 === 0 ? "bg-secondary/40" : "bg-background"
+                    } text-foreground border-b`}
+                  >
+                    <td className="p-4 font-medium">{row.amount}</td>
+                    <td className="p-4">{row.term}</td>
+                    <td className="p-4 font-semibold text-green-600">
+                      {row.repayment}
+                    </td>
+                    <td className="p-4 font-semibold">{row.monthly}</td>
                   </tr>
                 ))}
               </tbody>
@@ -203,7 +256,7 @@ const HowItWorks = () => {
             poster="/videos/video-thumbnail.jpg"
           >
             <source
-              src="/videos/InstantFunds_Logo_Video_Ready.mp4"
+              src="/videos/CashBuddy_Logo_Video_Ready.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

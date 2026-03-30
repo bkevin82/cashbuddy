@@ -163,7 +163,13 @@ export const HeroSection = () => {
               {/* <a href="/eligibility" className="btn-hero-ghost text-lg">
                 Check Eligibility
               </a> */}
-              <Link to="/eligibility" className="btn-hero-ghost text-lg">
+              {/* <Link to="/eligibility" className="btn-hero-ghost text-lg">
+                Check Eligibility
+              </Link> */}
+              <Link
+                to="/eligibility"
+                className="btn-hero-ghost text-center flex items-center justify-center"
+              >
                 Check Eligibility
               </Link>
             </div>
