@@ -490,9 +490,18 @@ const Apply = () => {
               <InputField label="Phone" name="phone" onChange={handleChange} />
 
               {/* ✅ FIXED DOB FIELD */}
-              <InputField
+              {/* <InputField
                 label="Date of Birth"
                 type="date"
+                name="dob"
+                onChange={handleChange}
+              /> */}
+              <InputField
+                label="Date of Birth"
+                type="text"
+                placeholder="Select Date"
+                onFocus={(e) => (e.target.type = "date")}
+                onBlur={(e) => (e.target.type = "text")}
                 name="dob"
                 onChange={handleChange}
               />
