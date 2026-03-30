@@ -202,12 +202,39 @@ import {
 
 /* ------------------ DATA ------------------ */
 
+// const reviews = [
+//   {
+//     name: "Mike T.",
+//     province: "Alberta",
+//     rating: 5,
+//     text: "Easy online application with clear terms. I like the different options the company provides like instant funding which is very helpful in case of emergency. Always ready to help customers and their service is 10/10. I highly recommend Simple Fast loans, If you need financial assistance at anytime. Thank you so much for all your help and support. It means a lot.",
+//     date: "Oct 2025",
+//     avatar: "/avatars/old_man_2.jpg",
+//   },
+//   {
+//     name: "Olivia Martin",
+//     province: "Ontario",
+//     rating: 5,
+//     text: "This was the fastest approval I have ever received. And just when I needed assistance.",
+//     date: "Nov 2025",
+//     avatar: "/avatars/woman.jpg",
+//   },
+//   {
+//     name: "William Campbell",
+//     province: "British Columbia",
+//     rating: 5,
+//     text: "Easy process. Quick response and moves fast. Will recommend to anyone that needs cash right away",
+//     date: "Nov 2025",
+//     avatar: "/avatars/old_man_1.jpg",
+//   },
+// ];
+
 const reviews = [
   {
     name: "Mike T.",
     province: "Alberta",
     rating: 5,
-    text: "A pipe in my house burst and I didn't have any money at the time to fix it. My friend had used Cashbuddy before and told me they could help. I went online and filled out their form. After only a couple of minutes they told me I could get $10,000 and got the money same day.",
+    text: "Easy online application with clear terms. I like the different options the company provides like instant funding which is very helpful in case of emergency. Always ready to help customers and their service is 10/10. I highly recommend Simple Fast loans, If you need financial assistance at anytime.",
     date: "Oct 2025",
     avatar: "/avatars/old_man_2.jpg",
   },
@@ -215,20 +242,113 @@ const reviews = [
     name: "Olivia Martin",
     province: "Ontario",
     rating: 5,
-    text: "Despite my low credit score and multiple rejections, I received my $3,000 loan within just 2 hours. Very professional and transparent service.",
+    text: "This was the fastest approval I have ever received. And just when I needed assistance.",
     date: "Nov 2025",
     avatar: "/avatars/woman.jpg",
   },
   {
     name: "William Campbell",
     province: "British Columbia",
-    rating: 5,
-    text: "My car broke down unexpectedly. I applied online and got approved within minutes. Funds were in my account the same day.",
+    rating: 4,
+    text: "Easy process. Quick response and moves fast. Will recommend to anyone that needs cash right away.",
     date: "Nov 2025",
     avatar: "/avatars/old_man_1.jpg",
   },
-];
 
+  // ❗ BAD / MIXED REVIEWS
+
+  {
+    name: "Ethan J.",
+    province: "Ontario",
+    rating: 3,
+    text: "Reliable service, but a few delays in confirmation caused minor stress. Also experienced a little delay in receiving the funds.",
+    date: "Feb 2026",
+    avatar: "/avatars/man5.jpg",
+  },
+  {
+    name: "Chloe D.",
+    province: "Alberta",
+    rating: 3,
+    text: "Loan disbursal was quick, but responses to queries were sometimes slow. However, they explained everything clearly in the end.",
+    date: "Feb 2026",
+    avatar: "/avatars/woman6.jpg",
+  },
+  {
+    name: "Ryan S.",
+    province: "British Columbia",
+    rating: 2,
+    text: "The process was fast, but customer support was hard to reach at times. Still managed to get the funds eventually.",
+    date: "Mar 2026",
+    avatar: "/avatars/man6.jpg",
+  },
+  {
+    name: "Anonymous",
+    province: "Manitoba",
+    rating: 1,
+    text: "Bad service. Did not receive the funds.",
+    date: "Mar 2026",
+    avatar: "/avatars/katela.jpg",
+  },
+
+  // ✅ NEW REVIEWS
+
+  {
+    name: "James R.",
+    province: "Ontario",
+    rating: 4,
+    text: "Honest loans for bad credit. Hands down the very best. It's a lifesaver, straightforward and at a fair rate. I would recommend this to anyone who needs cash. So much better than payday loan companies. This really helped my family in our time of need.",
+    date: "Dec 2025",
+    avatar: "/avatars/man1.jpeg",
+  },
+  {
+    name: "Sophia L.",
+    province: "Alberta",
+    rating: 5,
+    text: "Great service and very fast! Application process is painless and real quick.",
+    date: "Dec 2025",
+    avatar: "/avatars/woman2.jpeg",
+  },
+  {
+    name: "Daniel K.",
+    province: "British Columbia",
+    rating: 5,
+    text: "I recently used their program and my experience was very good. The process was simple and quick with minimal documentation. My loan got approved within just 2–3 hours which was really impressive. The team was also very helpful.",
+    date: "Jan 2026",
+    avatar: "/avatars/woman3.jpeg",
+  },
+  {
+    name: "Emma W.",
+    province: "Manitoba",
+    rating: 4,
+    text: "I had a great experience with their Credit Gain Program. It’s easy to follow and well organized. I liked how they focus on improving credit score step by step with proper guidance. Their team was always supportive.",
+    date: "Jan 2026",
+    avatar: "/avatars/woman4.jpeg",
+  },
+  {
+    name: "Noah P.",
+    province: "Saskatchewan",
+    rating: 5,
+    text: "Quick and easy loan approval. Very satisfied. Minimal paperwork and fast process. Highly recommend. Simple, reliable, and professional service.",
+    date: "Feb 2026",
+    avatar: "/avatars/woman5.jpg",
+  },
+  {
+    name: "Liam H.",
+    province: "Ontario",
+    rating: 5,
+    text: "Very efficient and professional team. Quick disbursal and smooth experience. Transparent and hassle-free process with great customer support.",
+    date: "Feb 2026",
+    avatar: "/avatars/man4.jpg",
+  },
+  {
+    name: "Ava M.",
+    province: "Alberta",
+    rating: 4,
+    text: "Easy application and timely approval. Fast loan with excellent support. Highly recommended for CashBuddy.",
+    date: "Mar 2026",
+    avatar: "/avatars/woman4.jpeg",
+  },
+];
 const avgRating = 4.9;
 const totalReviews = "12,482";
 
@@ -260,7 +380,7 @@ const TrustSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % reviews.length);
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
