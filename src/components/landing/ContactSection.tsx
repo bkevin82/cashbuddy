@@ -137,7 +137,8 @@ export const ContactSection = () => {
               className="text-accent font-semibold hover:underline"
             >
               {/* (705) 408-4763 */}
-              +1 (705) 664-0327
+              {/* +1 (705) 664-0327 */}
+              +1 (226) 793-6777
             </a>
             <br />
             <a
