@@ -72,7 +72,8 @@ const Contact = () => {
                   className="underline text-primary font-medium"
                 >
                   {/* (800) 555-0123 */}
-                  +1 ( 800 ) 888-4686
+                  {/* +1 ( 800 ) 888-4686 */}
+                  +1 (226)793-6715
                 </a>
               </div>
             ),
