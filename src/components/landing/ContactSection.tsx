@@ -138,7 +138,7 @@ export const ContactSection = () => {
             >
               {/* (705) 408-4763 */}
               {/* +1 (705) 664-0327 */}
-              +1 (226) 793-6777
+              +1 (226) 797-0442
             </a>
             <br />
             <a
@@ -147,7 +147,7 @@ export const ContactSection = () => {
             >
               {/* (800) 555-0123 */}
               {/* +1 ( 800 ) 888-4686 */}
-              +1 (226)793-6715
+              +1 (226) 797-0030
             </a>
 
             <p className="text-sm text-muted-foreground mt-1">
